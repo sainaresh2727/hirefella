@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import Loginbtn from './Loginbtn';
 import Registerbtn from './Registerbtn';
+import PostjobBtn from './PostjobBtn';
 
 function Navbar() {
   return (
@@ -31,6 +32,7 @@ function Navbar() {
     <div className='flex justify-center items-center gap-5'>
     <Loginbtn/>
     <Registerbtn/>
+    <PostjobBtn/>
     </div>
     
 

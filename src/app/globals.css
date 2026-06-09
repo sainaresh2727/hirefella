@@ -27,6 +27,7 @@
 }
 .icon-size{
   font-size: 22px;
+  margin: auto 0px;
 }
 .sub-heading-parent{
   display: flex;
@@ -173,15 +174,28 @@
   letter-spacing: 2px;
   align-self: flex-start;
 }
+.post-job-btn{
+  margin: auto 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border: solid 1px white;
+  background-color: black;
+  align-self: flex-start;
+  letter-spacing: 2px;
+  border-radius: 12px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+}
 /* Hero Section Css Starts */
 .hero-sec-cf{
   padding-top: 45px;
   padding-bottom: 45px;
  
 }
-#hero-sec-container{
-   
-}
+
 .hero-sec-content{
    display: flex;
    flex-direction: column;
@@ -203,7 +217,7 @@
 
 @media (max-width:768px) {
  #hero-sec-container{
-    padding: 13px;
+    padding: 15px;
   }
   .animation-text{
     font-size: 20px;
@@ -234,9 +248,7 @@
   padding-top:    15px;
   padding-bottom: 15px;
 }
-#platform-impact-container{
 
-}
 .impact-content{
   display: flex;
   flex-direction: column;
@@ -267,5 +279,16 @@
 }
 .impact-box p{
   font-size: 14px;
+}
+@media (max-width:768px) {
+  .impact-content{
+    padding: 15px;
+  }
+.impact-box{
+ width: 280px;
+ height: auto;
+ padding: 15px;
+ margin: 0px auto !important;
+  }
 }
 /* Platform Css Ends */
