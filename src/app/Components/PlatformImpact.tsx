@@ -61,7 +61,7 @@ function PlatformImpact() {
    </div>
 
     {/* Impact Numbers Div */}
-   <div className="grid grid-cols-1 lg:grid-cols-2 gap-5" ref={ref}>
+   <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 impact-grid" ref={ref}>
    
    {counterArray.map((x, y) => (
     <div key={y} className="impact-box">
