@@ -1,10 +1,11 @@
+import Link from 'next/link';
 import React from 'react'
 import { LuLogIn } from "react-icons/lu";
 
 function Loginbtn() {
   return (
    <>
-    <button className='login-btn'>LOGIN <LuLogIn className='icon-size'/></button>
+    <Link className='login-btn' href={'/user/auth/user-login'}>LOGIN <LuLogIn className='icon-size'/></Link>
    </>
   )
 }

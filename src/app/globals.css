@@ -5,7 +5,8 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}
+  
+ }
 
 /* Root Elements */
 :root{
@@ -22,6 +23,7 @@
   }
   
  /* Comman Css */
+ 
 .container{
   margin: 0px auto;
 }
@@ -40,7 +42,7 @@
 }
 @media (max-width:768px) {
   .sub-heading-parent-2{
-    justify-content: center !important;
+    justify-content: center;
   }
 }
 .sub-heading{
@@ -106,6 +108,7 @@
   color: white;
   font-size: 22px;
 }
+
 /* Navbar Css Starts */
 #navbar-container{
   display: flex;
@@ -296,7 +299,7 @@
   font-style: italic;
   font-weight: 500;
   color: var(--primary-color);
-  margin-top: 15px !important;
+  margin-top: 15px;
 }
 .impact-box p{
   font-size: 14px;
@@ -314,7 +317,7 @@
  padding: 15px;
  padding-top: 25px;
  padding-bottom: 28px;
- margin: 0px auto !important;
+ margin: 0px auto;
   }
 }
 /* Platform Css Ends */
@@ -330,7 +333,7 @@
   box-shadow: var(--box-shadow);
   background: var(--box--bg);
   height: 690px ;
-  width: 1160px !important;
+  width: 1160px ;
   border-radius: 20px;
 }
 .user-reg-image-parent{
@@ -339,6 +342,11 @@
   justify-content: center;
   padding: 15px;
 }
+@media (max-width:768px) {
+  .user-reg-image-parent{
+    display: none;
+  }
+}
 .user-reg-form-div{
   display: flex;
   align-items: center;
@@ -346,27 +354,33 @@
   }
   
 .user-reg-form{
-   width: 460px;
+   max-width:460px;
    padding: 22px;
-   height: 600px;
+   height: auto;
    background: var(--box--bg);
    box-shadow: var(--box-shadow);
    border-radius: 20px;
    display: flex;
    flex-direction: column;
-   gap: 24px;
+   gap: 18px;
+   /* overflow-y: hidden;
+   scrollbar-gutter: stable; */
 }
+/* .user-reg-form:hover{
+  overflow-y: auto;
+} */
 .input-parent{
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
+  font-size: 13px;
 }
 .input{
   border: solid 2px transparent;
   border-radius: 12px;
   padding: 8px;
 }
-.user-reg-form label{
+.input-parent label{
   font-size: 14px;
 }
 .input::placeholder{
@@ -379,19 +393,168 @@
 }
 .role-div{
   background: var(--box--bg);
-  border-radius: 6px;
+  border-radius: 12px;
   box-shadow: var(--box-shadow);
   padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  border: solid 1px #dcf5e8;
+  border: solid 1px #e5e7eb;
 }
 .role-div p{
   font-size: 11px;
 }
 .role-div h6{
   font-weight: bold;
-  font-size: 13px !important;
+  font-size: 13px;
  }
+ .active-role{
+  background: var(--box--bg);
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: solid 1px var(--primary-color);
+ }
+ .active-role p{
+  font-size: 11px;
+}
+.active-role h6{
+  font-weight: bold ;
+  font-size: 13px;
+ }
+ .submit-input-btn{
+  border: solid 1px var(--primary-color);
+  padding: 8px;
+  border-radius: 12px;
+  transition: all 0.7s ease;
+  font-size: 12px;
+}
+.submit-input-btn:hover{
+  background: var(--primary-btn-bg);
+  box-shadow: var(--primary-box-shadow);
+  color: white;
+  border: solid 1px transparent;
+}
+.rest-btn{
+  border: solid 1px black;
+  padding: 8px;
+  border-radius: 12px;
+  transition: all 0.7s ease;
+  font-size: 12px;
+}
+.rest-btn:hover{
+  color: white;
+  background-color: black;
+}
+.or-with-text{
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.facebook-btn{
+  border: solid 1px blue;
+  padding: 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.google-btn{
+  border: solid 1px black;
+  padding: 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  background-color: transparent;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
 /* User Register Css Ends */
+/* User Login Css Starts */
+.user-login-cf{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.user-login-container{
+  border: solid 1px var(--box-border);
+  box-shadow: var(--box-shadow);
+  background: var(--box--bg);
+  height: 690px ;
+  width: 1160px ;
+  border-radius: 20px;
+}
+.welcome-back-text{
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.user-login-form{
+   width:460px;
+   padding: 50px 20px;
+   height: auto;
+   background: var(--box--bg);
+   box-shadow: var(--box-shadow);
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.user-login-btn{
+  border-radius: 15px;
+  padding: 8px;
+  background-color: var(--primary-color);
+  box-shadow: var(--primary-box-shadow);
+  color: white;
+}
+.forget-password-text{
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: blue;
+}
+.dont-have-acc-reg-text{
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 0px auto;
+}
+u{
+  color: blue;
+}
+
+
+.password-parent{
+  position: relative;
+}
+
+.password-parent .input{
+  width: 100% !important;
+  padding-right: 40px;
+}
+
+.eye-icon{
+  position: absolute;
+  right: 12px;
+  top: 50% !important;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* User Login Css Ends */
