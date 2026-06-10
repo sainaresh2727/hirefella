@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Components/Navbar'
+import Navbar from './Components/Comman/Navbar'
 import Herosec from './Components/Herosec'
 import ClientArray from './Components/ClientArray'
 import PlatformImpact from './Components/PlatformImpact'

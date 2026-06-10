@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 
-import Loginbtn from './Loginbtn';
-import Registerbtn from './Registerbtn';
-import PostjobBtn from './PostjobBtn';
+import Loginbtn from '../Buttons/Loginbtn'
+import Registerbtn from '../Buttons/Registerbtn';
+import PostjobBtn from '../Buttons/PostjobBtn';
 
 function Navbar() {
   return (

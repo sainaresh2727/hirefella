@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-
+import "../../src/animation.css"
 
 
 export const metadata: Metadata = {

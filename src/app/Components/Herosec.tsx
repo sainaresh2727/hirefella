@@ -2,21 +2,15 @@
 
 import { TypeAnimation } from "react-type-animation";
 import React from 'react'
-import Registerbtn from "./Registerbtn";
-import FindjobBtn from "./FindjobBtn";
+import Registerbtn from './Buttons/Registerbtn'
+import FindjobBtn from "./Buttons/FindjobBtn";
 
-import heroSecBg from '../../../public/hero-sec-bg-banner.png'
+
 import HiringEcosystem from "./Animation/HiringEcosystem";
 
 function Herosec() {
 
-  let heroBgStyle={
-    background:`url(${heroSecBg.src})`,
-    minHeight:"100vh",
-    backgroundPosition:"center",
-    backgroundRepeat:"no-repeat",
-    backgroundSize:"cover"
-  }
+ 
  
   return (
    <>

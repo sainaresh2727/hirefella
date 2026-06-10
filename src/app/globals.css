@@ -38,6 +38,11 @@
   display: flex;
   align-items: center;
 }
+@media (max-width:768px) {
+  .sub-heading-parent-2{
+    justify-content: center !important;
+  }
+}
 .sub-heading{
   display: inline-flex;
   align-items: center;
@@ -223,10 +228,7 @@
 }
 
 @media (max-width:768px) {
- #hero-sec-container{
-    padding: 15px;
-  }
-  .animation-text{
+ .animation-text{
     font-size: 20px;
     font-weight: 400;
   }
@@ -260,9 +262,14 @@
 /* Platform Css Starts */
 .platform-impact-cf{
   padding-top:    15px;
-  padding-bottom: 15px;
+  padding-bottom: 70px;
 }
-
+@media (max-width:768px) {
+  .platform-impact-cf{
+    padding-top:    12px;
+    padding-bottom: 12px;
+  } 
+}
 .impact-content{
   display: flex;
   flex-direction: column;
@@ -311,3 +318,80 @@
   }
 }
 /* Platform Css Ends */
+/* User Register Css Starts */
+.user-register-cf{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#user-register-container{
+  border: solid 1px var(--box-border);
+  box-shadow: var(--box-shadow);
+  background: var(--box--bg);
+  height: 690px ;
+  width: 1160px !important;
+  border-radius: 20px;
+}
+.user-reg-image-parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.user-reg-form-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+.user-reg-form{
+   width: 460px;
+   padding: 22px;
+   height: 600px;
+   background: var(--box--bg);
+   box-shadow: var(--box-shadow);
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+.input-parent{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input{
+  border: solid 2px transparent;
+  border-radius: 12px;
+  padding: 8px;
+}
+.user-reg-form label{
+  font-size: 14px;
+}
+.input::placeholder{
+  font-size: 13px;
+}
+.input:focus{
+  outline: none ;
+  border: solid 2px var(--primary-color);
+  box-shadow: var(--primary-btn-bg) ;
+}
+.role-div{
+  background: var(--box--bg);
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: solid 1px #dcf5e8;
+}
+.role-div p{
+  font-size: 11px;
+}
+.role-div h6{
+  font-weight: bold;
+  font-size: 13px !important;
+ }
+/* User Register Css Ends */

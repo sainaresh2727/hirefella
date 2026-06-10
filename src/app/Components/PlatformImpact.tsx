@@ -2,7 +2,7 @@
 import React from 'react'
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import FindjobBtn from './FindjobBtn';
+import FindjobBtn from './Buttons/FindjobBtn';
 import { IoArrowRedoSharp } from "react-icons/io5";
 import { FaBriefcase, FaUsers, FaUserTie, FaTrophy } from "react-icons/fa";
 
