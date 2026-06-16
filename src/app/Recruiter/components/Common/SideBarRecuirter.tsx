@@ -13,11 +13,11 @@ function SideBarRecuirter() {
    </div>
   
    <div>
-   <Link href={'/'} className='recuirter-sidebar-links'>Post a New Job</Link>
+   <Link href={'/Recruiter/dashboard/post-job'} className='recuirter-sidebar-links'>Post a New Job</Link>
    </div>
 
    <div>
-   <Link href={'/'} className='recuirter-sidebar-links'>Posted Jobs</Link>
+   <Link href={'/Recruiter/dashboard/posted-jobs'} className='recuirter-sidebar-links'>Posted Jobs</Link>
    </div>
 
    <div>
@@ -34,7 +34,7 @@ function SideBarRecuirter() {
    </div>
 
    <div className='width-full'>
-   <Link href={'/'} className='logout-btn'>LOGOUT</Link>
+   <Link href={'/Recruiter/auth/recruiter-login'} className='logout-btn'>LOGOUT</Link>
    </div>
 
    </section>

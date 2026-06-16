@@ -4,7 +4,7 @@ import Link from 'next/link'
 function RecuirterRegBtn() {
   return (
     <>
-     <Link href={'/'} className='register-btn'>REGISTER</Link>
+     <Link href={'/Recruiter/auth/recruiter-register'} className='register-btn'>REGISTER</Link>
     </>
   )
 }

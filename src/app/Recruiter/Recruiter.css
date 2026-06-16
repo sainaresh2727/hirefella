@@ -36,6 +36,9 @@
     padding: 25px 30px;
     background-color: black;
     color: white;
+    position: sticky;
+    top: 0px;
+    left: 0px;
 }
 .recuirter-links-parent{
     display: flex;
@@ -80,3 +83,81 @@
     font-size: 22px;
 }
 /* Navbar Css Ends */
+/* Login Css Starts */
+.recruiter-login-cf
+{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+#recruiter-login-container{
+  border: solid 1px var(--box-border);
+  box-shadow: var(--box-shadow);
+  background: var(--box--bg);
+  height: 690px ;
+  width: 1160px ;
+  border-radius: 20px;
+}
+
+#recruiter-login-form{
+    display: flex !important;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 460px;
+    height: auto;
+    padding: 50px 20px;
+    background: var(--box--bg);
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+}
+.recruiter-login-submit-btn{
+    border-radius: 15px;
+    padding: 8px;
+    background-color: var(--primary-color);
+    box-shadow: var(--primary-box-shadow);
+    color: white;
+    font-size: 13px;
+    width: 100%;
+}
+/* Login Css Ends */
+/* Post New Job Css Starts */
+.post-new-job-main{
+    padding: 20px;
+    height: auto;
+}
+#post-job-form{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    border: solid 1px var(--box-border);
+    box-shadow: var(--box-shadow);
+    background: var(--box--bg);
+    height: auto;
+    overflow-y: auto;
+    border-radius: 16px;
+    height: 88vh;
+    overflow-y: auto;
+}
+#post-job-form h6{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.post-job-input-parent{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.post-job-input-parent label{
+    font-size: 14px;
+}
+.input::placeholder{
+    font-size: 13px;
+  }
+  .input{
+    font-size: 13px;
+  }
+/* Post New Job Css Ends */
