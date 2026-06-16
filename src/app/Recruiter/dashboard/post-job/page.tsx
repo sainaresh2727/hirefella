@@ -63,7 +63,7 @@ function page() {
     </div>
     <div className='post-job-input-parent'>
     <label>Enter Required Skills:</label>
-    <input type='number' name="" id="" className='input' placeholder='Required Skills'/>
+    <input type='text' name="" id="" className='input' placeholder='Required Skills'/>
     </div>
    
 
@@ -78,15 +78,11 @@ function page() {
     <textarea name="" id="" className='input' placeholder='Requirements' rows={5}></textarea>
     </div>
     
-
-     
-    
-    
     <div className='post-job-input-parent'>
     <label>Select Employement Type:</label>
     <select  className='input'>
     <option hidden>Select Here</option>  
-    <option value="Full Time">Full Here</option>  
+    <option value="Full Time">Full Time</option>  
     <option value="Part Time">Part Time</option>  
     <option value="Internship">Internship</option>  
     <option value="Contract">Contract</option>  
@@ -101,6 +97,11 @@ function page() {
     <option value="Hybrid">Hybrid</option>  
     <option value="Onsite">Onsite</option>  
     </select> 
+    </div>
+
+    <div className='post-job-input-parent'>
+    <label>Perks and Benefits:</label>
+    
     </div>
     
 
@@ -148,7 +149,10 @@ function page() {
   </option>))}
   </select>
     </div>  
-  
+    </div>
+
+     <div>
+    <input type="submit" className='post-job-submit-btn' value={"POST A JOB"} />
     </div>
 
     </form>
